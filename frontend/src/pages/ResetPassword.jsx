@@ -26,7 +26,7 @@ const ResetPassword = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/forget-password",
+        "https://mern-project-backend-tdgu.onrender.com/api/auth/forget-password",
         data
       );
       if (response.data.success) {
