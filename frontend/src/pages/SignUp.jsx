@@ -29,7 +29,7 @@ const SignUp = () => {
     try {
       // Post the form data to the API
       axios.defaults.withCredentials = true;
-      const response = await axios.post("http://localhost:3000/api/auth/register",data);
+      const response = await axios.post("https://mern-project-backend-tdgu.onrender.com/api/auth/register",data);
 
       if (response.data.sucess) {
         toast.success(response.data.message || "Registered successfully!");
