@@ -13,7 +13,7 @@ export const AppContextProvider = ({ children }) => {
   const getUserData = async () => {
     try {
       axios.defaults.withCredentials = true;
-      const { data } = await axios.get("http://localhost:3000/api/user/data");
+      const { data } = await axios.get("https://mern-project-backend-tdgu.onrender.com/api/user/data");
       if (data.success) {
         setIsLoggedIn(true);
         setUserData(data.userData)
