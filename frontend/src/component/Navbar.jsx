@@ -13,7 +13,7 @@ const Navbar = () => {
   const logout = async()=>{
     try {
       axios.defaults.withCredentials = true;
-      const {data} = await axios.post("http://localhost:3000/api/auth/logout");
+      const {data} = await axios.post("https://mern-project-backend-tdgu.onrender.com/api/auth/logout");
       toast.success("Logged out successfully!");
       navigate('/login')
     } catch (error) {
