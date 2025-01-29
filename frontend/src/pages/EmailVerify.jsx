@@ -60,7 +60,7 @@ const EmailVerify = () => {
   
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/verify",
+        "https://mern-project-backend-tdgu.onrender.com/api/auth/verify",
         {
           otp: otp.join(""), 
         },
